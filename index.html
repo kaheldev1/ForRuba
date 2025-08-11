@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Ruba</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="p-4 md:p-8">
+    <div class="max-w-full mx-auto bg-white rounded-xl shadow-2xl p-6 md:p-10">
+        <header class="text-center mb-8 relative">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800">Class Schedule</h1>
+            <p class="text-lg text-gray-500 mt-2">1ST SEMESTER PCBET-22-304A</p>
+            <div id="current-day-time" class="mt-4 text-sm text-gray-500"></div>
+            <img src="C:\Users\HP\Desktop\New folder\IMAGE\images (1).png" alt="Rizal Technological University Seal" class="absolute top-0 right-0 h-20 w-auto md:h-24" />
+        </header>
+        <div class="flex flex-wrap justify-center space-x-2 md:space-x-4 mb-6">
+            <button id="tab-mon" class="day-tab px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-white focus:outline-none">Monday</button>
+            <button id="tab-tue" class="day-tab px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-white focus:outline-none">Tuesday</button>
+            <button id="tab-wed" class="day-tab px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-white focus:outline-none">Wednesday</button>
+            <button id="tab-thu" class="day-tab px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-white focus:outline-none">Thursday</button>
+            <button id="tab-fri" class="day-tab px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-white focus:outline-none">Friday</button>
+        </div>
+        <div id="schedule-container">
+            <div id="content-mon" class="day-content">
+                <div class="space-y-4">
+                    <div class="schedule-item p-4">
+                        <div class="flex items-center mb-1">
+                            <i class="fas fa-desktop text-blue-600 mr-2"></i>
+                            <div class="font-semibold text-blue-600">(ONLINE)</div>
+                        </div>
+                        <div class="text-sm text-gray-500">3:00-4:30PM</div>
+                        <div class="text-lg font-medium text-gray-800">Pagbasa ng mga Dalumat sa Filipino Tungo sa Pananaliksik</div>
+                        <div class="text-xs text-gray-400 mt-1">Instructor: BULATAO, VALENTINA</div>
+                    </div>
+                    <div class="schedule-item p-4">
+                        <div class="flex items-center mb-1">
+                            <i class="fas fa-desktop text-blue-600 mr-2"></i>
+                            <div class="font-semibold text-blue-600">(ONLINE)</div>
+                        </div>
+                        <div class="text-sm text-gray-500">4:30-6:00PM</div>
+                        <div class="text-lg font-medium text-gray-800">Basic Microeconomics</div>
+                        <div class="text-xs text-gray-400 mt-1">Instructor: CASTAÑEDA, ANNABELLE CONCEPCION</div>
+                    </div>
+                    <div class="schedule-item p-4">
+                        <div class="flex items-center mb-1">
+                            <i class="fas fa-desktop text-blue-600 mr-2"></i>
+                            <div class="font-semibold text-blue-600">(ONLINE)</div>
+                        </div>
+                        <div class="text-sm text-gray-500">6:00-7:30PM</div>
+                        <div class="text-lg font-medium text-gray-800">Monetary Policy and Central Banking</div>
+                        <div class="text-xs text-gray-400 mt-1">Instructor: TIGLAO, JESUSITO E.</div>
+                    </div>
+                </div>
+            </div>
+            <div id="content-tue" class="day-content hidden">
+                <div class="space-y-4">
+                    <div class="schedule-item p-4">
+                        <div class="flex items-center mb-1">
+                            <i class="fas fa-users text-blue-600 mr-2"></i>
+                            <div class="font-semibold text-blue-600">(FACE TO FACE)</div>
+                        </div>
+                        <div class="text-sm text-gray-500">7:30-9:00AM | PMCOMPLAB-1</div>
+                        <div class="text-lg font-medium text-gray-800">Computer Application in Business</div>
+                        <div class="text-xs text-gray-400 mt-1">Instructor: BARRETO, DORINA</div>
+                    </div>
+                    <div class="schedule-item p-4">
+                        <div class="flex items-center mb-1">
+                            <i class="fas fa-users text-blue-600 mr-2"></i>
+                            <div class="font-semibold text-blue-600">(FACE TO FACE)</div>
+                        </div>
+                        <div class="text-sm text-gray-500">9:00-11:00AM</div>
+                        <div class="text-lg font-medium text-gray-800">Physical Activities Towards Health and Fitness 1</div>
+                        <div class="text-xs text-gray-400 mt-1">Instructor: SARMIENTO, ESTELITA F.</div>
+                    </div>
+                    <div class="schedule-item p-4">
+                        <div class="flex items-center mb-1">
+                            <i class="fas fa-users text-blue-600 mr-2"></i>
+                            <div class="font-semibold text-blue-600">(FACE TO FACE)</div>
+                        </div>
+                        <div class="text-sm text-gray-500">12:00NN-1:30PM | P308</div>
+                        <div class="text-lg font-medium text-gray-800">Life and Works of Rizal</div>
+                        <div class="text-xs text-gray-400 mt-1">Instructor: DEL ROSARIO, EDGARDO</div>
+                    </div>
+                </div>
+            </div>
+            <div id="content-wed" class="day-content hidden">
+                <div class="space-y-4">
+                    <div class="schedule-item p-4">
+                        <div class="flex items-center mb-1">
+                            <i class="fas fa-users text-blue-600 mr-2"></i>
+                            <div class="font-semibold text-blue-600">(FACE TO FACE)</div>
+                        </div>
+                        <div class="text-sm text-gray-500">12:00NN-1:30PM | P308</div>
+                        <div class="text-lg font-medium text-gray-800">Operations Management (TQM)</div>
+                        <div class="text-xs text-gray-400 mt-1">Instructor: PAINAGA, ERNESTO JR. P.</div>
+                    </div>
+                    <div class="schedule-item p-4">
+                        <div class="flex items-center mb-1">
+                            <i class="fas fa-users text-blue-600 mr-2"></i>
+                            <div class="font-semibold text-blue-600">(FACE TO FACE)</div>
+                        </div>
+                        <div class="text-sm text-gray-500">1:30-3:00PM | P308</div>
+                        <div class="text-lg font-medium text-gray-800">Art Appreciation</div>
+                        <div class="text-xs text-gray-400 mt-1">Instructor: CASTILLO, MA. NONELA B.</div>
+                    </div>
+                    <div class="schedule-item p-4">
+                        <div class="flex items-center mb-1">
+                            <i class="fas fa-desktop text-blue-600 mr-2"></i>
+                            <div class="font-semibold text-blue-600">(ONLINE)</div>
+                        </div>
+                        <div class="text-sm text-gray-500">3:00-4:30PM</div>
+                        <div class="text-lg font-medium text-gray-800">Art Appreciation</div>
+                        <div class="text-xs text-gray-400 mt-1">Instructor: CASTILLO, MA. NONELA B.</div>
+                    </div>
+                    <div class="schedule-item p-4">
+                        <div class="flex items-center mb-1">
+                            <i class="fas fa-desktop text-blue-600 mr-2"></i>
+                            <div class="font-semibold text-blue-600">(ONLINE)</div>
+                        </div>
+                        <div class="text-sm text-gray-500">10:30-12:00NN</div>
+                        <div class="text-lg font-medium text-gray-800">Operations Management (TQM)</div>
+                        <div class="text-xs text-gray-400 mt-1">Instructor: PAINAGA, ERNESTO JR. P.</div>
+                    </div>
+                </div>
+            </div>
+            <div id="content-thu" class="day-content hidden">
+                <div class="space-y-4">
+                    <div class="schedule-item p-4">
+                        <div class="flex items-center mb-1">
+                            <i class="fas fa-users text-blue-600 mr-2"></i>
+                            <div class="font-semibold text-blue-600">(FACE TO FACE)</div>
+                        </div>
+                        <div class="text-sm text-gray-500">3:00-4:30PM | P308</div>
+                        <div class="text-lg font-medium text-gray-800">Pagbasa ng mga Dalumat sa Filipino Tungo sa Pananaliksik</div>
+                        <div class="text-xs text-gray-400 mt-1">Instructor: BULATAO, VALENTINA</div>
+                    </div>
+                    <div class="schedule-item p-4">
+                        <div class="flex items-center mb-1">
+                            <i class="fas fa-users text-blue-600 mr-2"></i>
+                            <div class="font-semibold text-blue-600">(FACE TO FACE)</div>
+                        </div>
+                        <div class="text-sm text-gray-500">4:30-6:00PM | P308</div>
+                        <div class="text-lg font-medium text-gray-800">Basic Microeconomics</div>
+                        <div class="text-xs text-gray-400 mt-1">Instructor: CASTAÑEDA, ANNABELLE CONCEPCION</div>
+                    </div>
+                    <div class="schedule-item p-4">
+                        <div class="flex items-center mb-1">
+                            <i class="fas fa-users text-blue-600 mr-2"></i>
+                            <div class="font-semibold text-blue-600">(FACE TO FACE)</div>
+                        </div>
+                        <div class="text-sm text-gray-500">6:00-7:30PM | P308</div>
+                        <div class="text-lg font-medium text-gray-800">Monetary Policy and Central Banking</div>
+                        <div class="text-xs text-gray-400 mt-1">Instructor: TIGLAO, JESUSITO E.</div>
+                    </div>
+                </div>
+            </div>
+            <div id="content-fri" class="day-content hidden">
+                <div class="space-y-4">
+                    <div class="schedule-item p-4">
+                        <div class="flex items-center mb-1">
+                            <i class="fas fa-desktop text-blue-600 mr-2"></i>
+                            <div class="font-semibold text-blue-600">(ONLINE)</div>
+                        </div>
+                        <div class="text-sm text-gray-500">7:30-9:00AM</div>
+                        <div class="text-lg font-medium text-gray-800">Computer Application in Business</div>
+                        <div class="text-xs text-gray-400 mt-1">Instructor: BARRETO, DORINA</div>
+                    </div>
+                    <div class="schedule-item p-4">
+                        <div class="flex items-center mb-1">
+                            <i class="fas fa-desktop text-blue-600 mr-2"></i>
+                            <div class="font-semibold text-blue-600">(ONLINE)</div>
+                        </div>
+                        <div class="text-sm text-gray-500">12:00NN-1:30PM</div>
+                        <div class="text-lg font-medium text-gray-800">Life and Works of Rizal</div>
+                        <div class="text-xs text-gray-400 mt-1">Instructor: DEL ROSARIO, EDGARDO</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-black-light max-w-4xl mx-auto rounded-xl shadow-2xl mt-8 p-6 md:p-10 text-center">
+        <p>
+            Developed by 
+            <a href="https://www.facebook.com/kaheldev" target="_blank" rel="noopener noreferrer" class="footer-link">kaheldev</a>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
