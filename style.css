@@ -38,6 +38,7 @@ body {
     border-radius: 0.75rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    padding: 1rem;
 }
 
 .schedule-item:hover {
@@ -51,6 +52,9 @@ body {
     border: 1px solid transparent;
     color: var(--dark-purple);
     background-color: var(--light-purple);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
 }
 
 .day-tab:hover {
@@ -72,6 +76,8 @@ body {
     text-align: center;
     margin-top: 2rem;
     padding: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .footer-black-light .footer-link {
@@ -102,35 +108,92 @@ body {
     transform: translateY(0);
 }
 
+
+.max-w-full {
+    max-width: 100%;
+}
+
+
 @media (max-width: 768px) {
-    .max-w-4xl {
-        max-width: 100%;
+    body {
         padding: 0.5rem;
     }
+
+    .max-w-full {
+        padding: 0;
+    }
+
+    .day-tabs-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
     .day-tab {
         flex-grow: 1;
-        margin: 0.25rem;
         padding: 0.75rem 0.5rem;
         font-size: 0.8rem;
         text-align: center;
     }
-    .day-tabs-container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+
     header {
-        padding-bottom: 2rem;
+        padding: 1rem;
     }
+
+    header img {
+        position: static;
+        margin-top: 1rem;
+        height: 60px;
+    }
+
     .schedule-item {
         padding: 0.75rem;
     }
+
     .schedule-item .text-lg {
         font-size: 1rem;
     }
+
     .schedule-item .text-sm {
         font-size: 0.8rem;
     }
+
     .schedule-item .text-xs {
         font-size: 0.7rem;
+    }
+
+    .footer-black-light {
+        padding: 1rem;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .day-tabs-container {
+        gap: 1rem;
+    }
+    
+    .day-tab {
+        padding: 1rem 1.25rem;
+    }
+
+    header img {
+        height: 80px;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .max-w-full {
+        max-width: 1024px;
+    }
+    
+    .day-tabs-container {
+        gap: 1.5rem;
+    }
+
+    header img {
+        height: 96px;
     }
 }
